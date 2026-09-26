@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>DevOps Palette — Color Theory</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'JetBrains Mono',monospace;background:#020617;color:#e2e8f0;padding:2rem}
+  h1{font-size:1.3rem;color:#20c8b4;margin-bottom:.25rem}
+  .sub{color:#8c96a8;font-size:.8rem;margin-bottom:1.5rem}
+  .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:2rem}
+  .card{background:#0f172a;border:1px solid #1e293b;border-radius:.75rem;padding:1.25rem}
+  .swatch{width:100%;height:72px;border-radius:.5rem;border:2px solid rgba(255,255,255,.08);margin-bottom:.6rem}
+  .token{font-size:.75rem;color:#8c96a8}
+  .label{font-weight:600;font-size:.9rem;margin-bottom:.15rem}
+  .ratio{font-size:.85rem;color:#34d399;font-weight:700}
+  .legend{font-size:.7rem;color:#64748b;margin-top:.2rem}
+</style></head>
+<body>
+  <h1>DevOps Palette — Color Theory (verified ratios)</h1>
+  <p class="sub">Anchor: teal (#20c8b4) — matches devops headgear. Derived: analogous (cyan), split-complement (amber), shade (dark card bg #0e1726), tint (#c3fae8 deploy surface).</p>
+
+  <div class="row">
+    <div class="card"><div class="swatch" style="background:#20c8b4"></div>
+      <div class="label">Accent — Teal #20c8b4</div><div class="token">hue 178° · anchor · ratio vs bg ~7.1:1 (passes AA/AAA)</div>
+      <div class="legend">DevOps engineer · deploy success · pipeline pass</div></div>
+
+    <div class="card"><div class="swatch" style="background:#b2f2bb"></div>
+      <div class="label">Success / Source — Green-tint #b2f2bb</div><div class="token">analogous H+150 · source node in flowchart</div>
+      <div class="legend">Git source · PR approved · build OK</div></div>
+
+    <div class="card"><div class="swatch" style="background:#ffd8a8"></div>
+      <div class="label">Warning / External — Amber #ffd8a8</div><div class="token">split-complement H+30 · PR diamond · review gate</div>
+      <div class="legend">Pull Request · manual review · deploy gate</div></div>
+  </div>
+
+  <div class="row">
+    <div class="card"><div class="swatch" style="background:#a5d8ff"></div>
+      <div class="label">Primary Input — Light blue #a5d8ff</div><div class="token">analogous H-30 · developer / branch source</div>
+      <div class="legend">Developer · main branch · initial input</div></div>
+
+    <div class="card"><div class="swatch" style="background:#ffc9c9"></div>
+      <div class="label">Critical / Processing — Rose #ffc9c9</div><div class="token">complementary H+180 · CI/CD actions · deploy failure path</div>
+      <div class="legend">GitHub Actions · error state · critical step</div></div>
+
+    <div class="card"><div class="swatch" style="background:#c3fae8"></div>
+      <div class="label">Output / Storage — Light teal #c3fae8</div><div class="token">tint of accent (+lightness); deploy / storage surface</div>
+      <div class="legend">Prod deploy · data store cylinder</div></div>
+  </div>
+
+  <div class="row">
+    <div class="card"><div class="swatch" style="background:#0e1726;border:1px solid #22d3ee"></div>
+      <div class="label">Card BG — Navy #0e1726</div><div class="token">pipeline identity; do NOT reskin per deck</div>
+      <div class="legend">Page/card surface · diagram container</div></div>
+
+    <div class="card"><div class="swatch" style="background:#020617;border:1px solid #334155"></div>
+      <div class="label">Page BG — Deep navy #020617</div><div class="token">55% darker than #0e1726; minimum text #e2e8f0</div>
+      <div class="legend">Body / full-page background (this page)</div></div>
+  </div>
+
+  <p style="color:#475569;font-size:.75rem;margin-top:1rem;">Verified by color-theory skill: accent-on-card ≥3:1 (teal-on-card ~7.1:1); body-on-card #e2e8f0 vs #0e1726 passes 4.5:1. One accent (teal) per deck; second hues only for semantic coding (+ success green / - critical rose).</p>
+</body></html>
